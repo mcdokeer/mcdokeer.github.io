@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f766e">
+    <title>QuickFileTr Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>QuickFileTr Privacy Policy</h1>
+          <p>Effective date: May 5, 2026</p>
+        </div>
+      </header>
+
+      <section class="panel">
+        <h2>Overview</h2>
+        <p>
+          QuickFileTr is a cross-device file transfer and shared clipboard tool. Its single purpose is to let you pair two devices and transfer selected files or temporary clipboard text between them through a WebRTC peer-to-peer connection.
+        </p>
+        <p>
+          QuickFileTr does not sell personal information, does not use advertising trackers, and does not run analytics code.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Data QuickFileTr Handles</h2>
+        <p>
+          QuickFileTr may handle the following data only as needed for its file transfer and shared clipboard features:
+        </p>
+        <ul>
+          <li>Files selected by the user for transfer.</li>
+          <li>Clipboard text that the user explicitly pastes into the shared clipboard.</li>
+          <li>Temporary WebRTC connection data, such as offer and answer data, used to pair devices.</li>
+          <li>Temporary pairing room identifiers and timestamps used by the signaling service.</li>
+          <li>Optional browser-visible network information, limited to IP address and port, when the user enables network info sharing.</li>
+          <li>Local settings and transfer records stored in the browser, such as language, reconnect settings, device name, and recent transfer history.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>File And Clipboard Transfer</h2>
+        <p>
+          File contents and shared clipboard text are transferred between paired devices through WebRTC DataChannel after the connection is established. They are not intentionally sent to the QuickFileTr signaling service.
+        </p>
+        <p>
+          The signaling service is used only to exchange temporary connection information required for pairing and reconnecting devices.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Remote Service</h2>
+        <p>
+          QuickFileTr connects to <code>https://qftr.shuimuext.workers.dev/</code> for signaling. The service creates temporary pairing rooms and exchanges WebRTC offer/answer data. It is not used as a file storage service and does not serve executable extension code.
+        </p>
+        <p>
+          As with any web request, the hosting provider may process standard request metadata such as IP address, time, and user agent for delivery, security, or operational purposes.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Extension Permissions</h2>
+        <ul>
+          <li><strong>clipboardRead</strong>: Used only when the user clicks the paste button in the shared clipboard panel.</li>
+          <li><strong>clipboardWrite</strong>: Used only when the user clicks the copy button for received shared clipboard text or the pairing code.</li>
+          <li><strong>downloads</strong>: Used so the receiving device can save files transferred through the WebRTC connection.</li>
+          <li><strong>Host permission</strong>: Used to access the signaling service at <code>https://qftr.shuimuext.workers.dev/</code>.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Local Storage</h2>
+        <p>
+          QuickFileTr stores some data locally in the browser to support normal operation, such as language preference, device display name, reconnect information, and transfer records. This data stays in the browser unless the user clears browser storage or disables saved connection settings.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Data Retention</h2>
+        <p>
+          Temporary pairing and reconnect rooms are designed to be short-lived and are deleted after use, reset, timeout, or page close when possible. QuickFileTr does not provide user accounts and does not maintain a permanent cloud file history.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Children's Privacy</h2>
+        <p>
+          QuickFileTr is not directed to children and does not knowingly collect information from children.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Changes To This Policy</h2>
+        <p>
+          This policy may be updated when QuickFileTr changes how it handles data or permissions. The effective date at the top of this page indicates the latest version.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact the publisher through the extension store listing.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
